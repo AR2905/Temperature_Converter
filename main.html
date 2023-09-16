@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Temperature Converter</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon"
+            href="icon\icon.png">
+    </head>
+    <body>
+        <div class="left_all">
+
+            <div class="l_val"> </div>
+
+            <div class="left"></div>
+
+        </div>
+        <div class="outer">
+            <div class="title">
+                <h1 style="color: #28282B;">TEMPERATURE CONVERTER</h1>
+                <span class="temp-icon" style="color: #28282B;"><i
+                        class="fa fa-thermometer-empty"></i></span>
+            </div>
+            <div class="container">
+                <div class="choose"
+                    style="display: flex;">
+                    <div class="from"
+                        style="padding-left:90px; color:gray  ; font-size: 20px;">From</div>
+                    <div class="to"
+                        style="padding-left:150px; color:gray  ; font-size: 20px; ">To</div>
+                </div>
+
+                <div class="temp-dropdowns" style="padding-top: 5px;">
+                    <select id="fromTemp" style="height: 35px; ">
+                        <option value="°C">Celsius (°C)</option>
+                        <option value="°F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                    <select id="toTemp" style="height: 35px;">
+                        <option value="°C">Celsius (°C)</option>
+                        <option value="°F">Fahrenheit (°F)</option>
+                        <option value="K">Kelvin (K)</option>
+                    </select>
+                </div>
+
+                <div class="temperature-input">
+                    <input type="number" id="temperature"
+                        placeholder="Enter temperature">
+                </div>
+                <div class="result">
+                    <p id="convertedResult"></p>
+                </div>
+                <div class="button">
+                    <button id="convertButton"> Convert</button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="right_all">
+
+            <div class="r_val"></div>
+
+            <div class="right"> </div>
+        </div>
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
